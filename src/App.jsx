@@ -1,35 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./index.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+    <div className="min-h-screen bg-hyrule text-white flex items-center justify-center p-6">
+      <div className="text-center">
+        <h1 className="text-3xl md:text-5xl font-zelda text-triforce mb-6">
+          ZeldaVerse
+        </h1>
+        <p className="max-w-md mx-auto text-lg font-light">
+          Uma enciclopédia interativa de <strong>The Legend of Zelda</strong>.
+          Explore jogos, monstros, personagens e muito mais!
         </p>
+        <button className="mt-8 bg-triforce text-black px-6 py-2 rounded-xl shadow hover:bg-yellow-300 transition">
+          Entrar na aventura
+        </button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
