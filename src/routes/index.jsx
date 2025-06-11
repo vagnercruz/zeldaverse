@@ -8,7 +8,7 @@ export default function AppRoutes() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/jogos" element={<Games />} />
-      <Route path="/monstros" element={<Games />} />
+      <Route path="/monstros" element={<Monsters />} />
     </Routes>
   );
 }
